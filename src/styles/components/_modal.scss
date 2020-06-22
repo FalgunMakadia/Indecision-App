@@ -1,0 +1,42 @@
+// Styling React Modal is defferent than other components as we have not created it.
+// The names of classes we are using here are predefined and supposed to be exectly like that.
+
+.ReactModalPortal>div {
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    transition: opacity 200ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;   
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: $light-blue;
+    color: white;
+    max-width: 30rem;
+    outline: 4px solid $dark-blue;
+    padding: $m-size;
+    padding-top: .8rem;
+    text-align: center;
+}
+
+// .modal__title {
+
+// }
+
+.modal__body {
+    font-size: 2rem;
+    font-weight: 300;
+    word-break: break-all;
+    font-family: Georgia;
+}
